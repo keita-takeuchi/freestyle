@@ -1,0 +1,7 @@
+<%= form_for @post do |f| %>
+  <%= f.file_field :movie_url ,class: "movie_url"%>
+  <%= f.text_field :description ,class: "post_description" %>
+  <%= f.submit %>
+<% end %>
+
+<%= render 'layouts/footer' %>

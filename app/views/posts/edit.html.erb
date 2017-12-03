@@ -1,0 +1,12 @@
+  <div class="contents row">
+    <div class="edit_body">
+    <%= form_tag("/posts/#{@post.id}", method: :patch ) do %>
+      <h3 class="search_title">
+        編集する
+      </h3>
+      <input placeholder="movie" type="text" name="movie_url" value="<%= @post.movie_url %>" autofocus="true">
+      <textarea cols="30" name="description" placeholder="text" rows="10"><%= @post.description %></textarea>
+      <input type="submit" value="SENT">
+    <% end %>
+  </div>
+  </div>

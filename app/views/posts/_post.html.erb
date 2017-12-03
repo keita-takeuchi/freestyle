@@ -1,0 +1,52 @@
+
+
+<div class="under_movie">
+
+    <div class="post_user_information">
+      <%= image_tag post.user.image_url, :class => "post_user_icon" %>
+
+      <div class="post_user_name">
+        <%= post.user.nickname %>
+      </div>
+
+      <div class="post_edit">
+  <%= link_to 'Show', post %>
+  <%= link_to 'Edit', edit_post_path(post) %>
+  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+
+    </div>
+
+    <div class="movie_box">
+      <%= video_tag(post.movie_url, controls: true, size: '500x300') %>
+    </div>
+
+
+
+
+<!-- <ul class="post-action">
+  <li>
+      <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </li>
+  <li>
+      <i class="fa fa-comment-o" aria-hidden="true"></i>
+  </li>
+</ul>
+
+    <div class="liked_count">
+      <p>liked</p>
+    </div> -->
+
+  </div>
+
+  <div class="movie_description">
+      <%= post.description %>
+  </div>
+
+<!--
+  <div class="post_date">
+
+  </div> -->
+
+</div>
+

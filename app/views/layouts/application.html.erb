@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Freestyle</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> <!-- font awesomeのコード -->
+</head>
+
+
+<body>
+<div class="header">
+  <%= render 'layouts/header' %>
+</div>
+
+<div class="container">
+<%= yield %>
+</div>
+
+</body>
+
+<div class="footer">
+
+  <div class="home_menu">
+    <%= link_to posts_path, class: "footer_icon" do %>
+      <i class="fa fa-home fa-3x fa-color" aria-hidden="true"></i>
+    <% end %>
+
+    <%= link_to users_search_path, class: "footer_icon" do %>
+      <i class="fa fa-search fa-3x fa-color" aria-hidden="true"></i>
+    <% end %>
+
+    <%= link_to new_post_path, class: "footer_icon" do %>
+      <i class="fa fa-futbol-o fa-3x fa-color" aria-hidden="true"></i>
+    <% end %>
+
+    <%= link_to user_path(current_user), class: "footer_icon" do %>
+     <i class="fa fa-user fa-3x fa-color" aria-hidden="true"></i>
+    <% end %>
+
+
+</div>
+
+</div>
+
+</html>

@@ -1,0 +1,286 @@
+.container { padding-top: 60px; }
+
+.footer{
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 2px rgba(210, 210, 210, .7);
+  background-color: #001e3c;
+  z-index: 3;
+  box-shadow: 0 2px 2px rgba(210, 210, 210, .7);
+}
+
+.home_menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.footer_icon{
+  background-color: #001e3c;
+  display: inline-block;
+  width : (100% / 5) ;
+  text-align: center;
+  /* レイアウト崩れたらflex-boxかclear-fix */
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-color{
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px #001e3c;
+}
+
+.header{
+  background-color: #001e3c;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px rgba(210, 210, 210, .7);
+}
+
+.header_icon{
+  background-color: #001e3c;
+  display: inline-block;
+  width : (100% / 5) ;
+  text-align: center;
+  /* レイアウト崩れたらflex-boxかclear-fix */
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header_mypage_name{
+    background-color: #001e3c;
+  display: inline-block;
+  width : (100% / 5) ;
+  text-align: center;
+  /* レイアウト崩れたらflex-boxかclear-fix */
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-container {
+    padding: 15px;
+  }
+
+.header_title{
+  color: #db0a40;
+  width: 0 auto;
+  margin-bottom: 0;
+  margin-top: 8px;
+  margin-left: 5px;
+  /*text-align: center;*/
+   /*なんで中央寄せにならない！？*/
+}
+
+.atw {
+  text-decoration: none;
+}
+
+.post_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.post_icon {
+  margin: 0 8px 0 15px;
+  display:inline-block;
+  vertical-align: middle;
+width: 30px;
+      height: 30px;
+      border-radius: 50%;
+  }
+
+.post-icon-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+    }
+
+.post-name {
+  flex: 1;
+  display: inline;
+  vertical-align: middle;
+  }
+
+.post-action {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  list-style: none;
+  margin-left: -40px;
+
+  li {
+    margin-right: 15px;
+
+/*    &:last-child {
+      flex: 1;
+      text-align: right;
+      margin-right: 0;
+    }*/
+
+    > * {
+      cursor: pointer;
+    }
+  }
+
+  .post-stock {
+    width: 24px;
+    display: inline-block;
+  }
+
+  .post-action-img {
+    width: 24px;
+  }
+}
+
+.user_icon{
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.user_nickname{
+  text-align: center;
+}
+
+.follows{
+  display: flex;
+  justify-content: center;
+}
+
+.post_user_icon{
+  display:inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+}
+
+.post_user_name{
+  flex: 1;
+  display: inline;
+  vertical-align: middle;
+  font-size: 20px
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
+}
+
+.movie_description {
+  width: 100%;
+  height: auto;
+  border-bottom: solid #db0a40;
+}
+
+.post_description {
+  width:100%;
+  height:300px;
+}
+
+.movie_url {
+}
+
+.post_edit {
+  flex: 1;
+  display: inline;
+  vertical-align: middle;
+  float: right;
+/*  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;*/
+}
+
+.post_user_information {
+  position: relative;
+}
+
+.search_title {
+  color: #db0a40;
+}
+
+.search_result {
+  color: #db0a40;
+}
+
+.search_body {
+  text-align: center;
+}
+
+.search_table {
+  margin: auto;
+}
+
+.edit_body {
+  margin: auto;
+  text-align: center;
+}
+
+.comments {
+  padding: 5px;
+  margin-top: 15px;
+  a {
+    color: #fff;
+    :hover {
+      text-decoration: underline;
+    }
+  }
+}

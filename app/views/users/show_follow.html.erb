@@ -1,0 +1,30 @@
+<% provide(:title, @title) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <%= image_tag @user.image_url, :class => "user_icon"%>
+      <h1 class="user_nickname"><%= @user.nickname %></h1>
+      <span><%= link_to "view my profile", @user %></span>
+      <span><b>Posts:</b> <%= @user.posts.count %></span>
+    </section>
+    <section class="stats">
+      <%= render 'posts/stats' %>
+          <h3><%= @title %></h3>
+    <% if @users.any? %>
+      <ul class="users follow">
+      </ul>
+    <% end %>
+      <% if @users.any? %>
+        <div class="user_avatars">
+          <% @users.each do |user| %>
+          <%= image_tag user.image_url, :class => "user_icon" %>
+          <p class="user_nickname"><%= user.nickname %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </section>
+  </aside>
+  <div class="col-md-8">
+
+  </div>
+</div>
