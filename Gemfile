@@ -54,7 +54,6 @@ end
   gem 'sprockets', '2.11.0'
   gem 'devise'
 
-  gem 'acts-as-taggable-on', '~>3.4'
   gem 'carrierwave'
   gem 'mini_magick'
   gem 'jquery-rails'
