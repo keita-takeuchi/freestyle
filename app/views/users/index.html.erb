@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1>users index</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User nickname</th>
+      <th>User email</th>
+      <th>User description</th>
+      <th>Follower</th>
+      <th>Followed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td>
+          <%= link_to "#{user.nickname}", user_path(user) %>
+        </td>
+        <td><%= user.email %></td>
+        <td><%= user.description %></td>
+        <td><%= user.following.count %></td>
+        <td><%= user.followers.count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div class="current_position">
+  <p id="current_position">現在位置の取得</p>
+</div>
+
+<div id="insert"></div>
+</div>
+<div style='width: 800px;'>
+  <div id="map" style='width: 600px; height: 400px;'></div>
+</div>
+<p id="current_result"></p>
+
+
+<%= link_to 'New Post', new_post_path %>

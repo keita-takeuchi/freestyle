@@ -56,7 +56,7 @@ end
 
   gem 'acts-as-taggable-on', '~>3.4'
   gem 'carrierwave'
-  gem 'rmagick'
+  gem 'mini_magick'
   gem 'jquery-rails'
 
   group :production do
