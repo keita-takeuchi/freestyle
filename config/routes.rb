@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root 'posts#index'
   get "users/search" => 'users#search'
+  resources :users
   resources :posts
   resources :notices
-  resources :users
   resources :posts do
     resources :comments, only: [:create]
   end

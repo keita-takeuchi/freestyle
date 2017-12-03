@@ -4,8 +4,10 @@
       <h3 class="search_title">
         編集する
       </h3>
-      <input placeholder="movie" type="text" name="movie_url" value="<%= @post.movie_url %>" autofocus="true">
-      <textarea cols="30" name="description" placeholder="text" rows="10"><%= @post.description %></textarea>
+      <input placeholder="movie" type="text" name="movie_url" value="<%= @post.movie_url %>" autofocus="true"><br ><br >
+
+      <textarea cols="30" name="description" placeholder="text" rows="10"><%= @post.description %></textarea><br >
+
       <input type="submit" value="SENT">
     <% end %>
   </div>

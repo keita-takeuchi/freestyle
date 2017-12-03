@@ -17,18 +17,18 @@ class ImageUploader < CarrierWave::Uploader::Base
 
 
   # 保存形式をJPGにする
-  process :convert => 'jpg'
+  # process :convert => 'jpg'
 
 
   # jpg,jpeg,gif,pngしか受け付けない
-  def extension_white_list
-    %w(jpg jpeg gif png)
-  end
+  # def extension_white_list
+  #   %w(jpg jpeg gif png)
+  # end
 
  # 拡張子が同じでないとGIFをJPGとかにコンバートできないので、ファイル名を変更
-  def filename
-    super.chomp(File.extname(super)) + '.jpg' if original_filename.present?
-  end
+  # def filename
+  #   super.chomp(File.extname(super)) + '.jpg' if original_filename.present?
+  # end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)

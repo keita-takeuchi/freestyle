@@ -19,6 +19,17 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def edit
+    @user = current_user
+  end
+
+  def update
+    # binding.pry
+    @user = current_user
+    @user.update(user_params)
+    redirect_to @user
+  end
+
   def search
     params[:search] ||= []
     @user = User.where("nickname LIKE(?)", "%#{params[:search]}%")
@@ -36,5 +47,10 @@ class UsersController < ApplicationController
     @user  = User.find(params[:id])
     @users = @user.followers
     render 'show_follow'
+  end
+
+  private
+  def user_params
+    params.require(:user).permit(:nickname, :description, :image_url, :address)
   end
 end

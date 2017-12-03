@@ -5,9 +5,11 @@
     <div class="post_user_information">
       <%= image_tag post.user.image_url, :class => "post_user_icon" %>
 
-      <div class="post_user_name">
+    <span class="post_user_name">
+      <a href="/users/<%= post.user.id %>">
         <%= post.user.nickname %>
-      </div>
+      </a>
+    </span>
 
       <div class="post_edit">
   <%= link_to '詳細', post %>
