@@ -1,0 +1,12 @@
+  <div class="contents row">
+    <div class="edit_body">
+    <%= form_tag("/users/#{current_user}", method: :patch ) do %>
+      <h3 class="search_title">
+        編集する
+      </h3>
+      <input placeholder="movie" type="text" name="nickname" value="<%= current_user.nickname %>" autofocus="true">
+      <textarea cols="30" name="description" placeholder="text" rows="10"><%= current_user.description %></textarea>
+      <input type="submit" value="SENT">
+    <% end %>
+  </div>
+  </div>

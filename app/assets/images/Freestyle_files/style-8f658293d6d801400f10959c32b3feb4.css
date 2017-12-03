@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* line 1, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.container {
+  padding-top: 60px;
+}
+
+/* line 3, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.footer {
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 2px rgba(210, 210, 210, 0.7);
+  background-color: #001e3c;
+  z-index: 3;
+  box-shadow: 0 2px 2px rgba(210, 210, 210, 0.7);
+}
+
+/* line 15, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.home_menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 100%;
+}
+
+/* line 22, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.footer_icon {
+  background-color: #001e3c;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  /* レイアウト崩れたらflex-boxかclear-fix */
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 33, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.fa-color {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 1px #001e3c;
+}
+
+/* line 39, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.header {
+  background-color: #001e3c;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 2px 2px rgba(210, 210, 210, 0.7);
+}
+
+/* line 50, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.header_icon {
+  background-color: #001e3c;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  /* レイアウト崩れたらflex-boxかclear-fix */
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 61, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.header_mypage_name {
+  background-color: #001e3c;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  /* レイアウト崩れたらflex-boxかclear-fix */
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 72, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.header-container {
+  padding: 15px;
+}
+
+/* line 76, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.header_title {
+  color: #db0a40;
+  width: 0 auto;
+  margin-bottom: 0;
+  margin-top: 8px;
+  margin-left: 5px;
+  /*text-align: center;*/
+  /*なんで中央寄せにならない！？*/
+}
+
+/* line 86, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.atw {
+  text-decoration: none;
+}
+
+/* line 90, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* line 98, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post_icon {
+  margin: 0 8px 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* line 107, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post-icon-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+}
+
+/* line 114, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post-name {
+  flex: 1;
+  display: inline;
+  vertical-align: middle;
+}
+
+/* line 120, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post-action {
+  width: 100%;
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  list-style: none;
+  margin-left: -40px;
+}
+/* line 129, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post-action li {
+  margin-right: 15px;
+  /*    &:last-child {
+        flex: 1;
+        text-align: right;
+        margin-right: 0;
+      }*/
+}
+/* line 138, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post-action li > * {
+  cursor: pointer;
+}
+/* line 143, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post-action .post-stock {
+  width: 24px;
+  display: inline-block;
+}
+/* line 148, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post-action .post-action-img {
+  width: 24px;
+}
+
+/* line 153, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.user_icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 163, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.user_nickname {
+  text-align: center;
+}
+
+/* line 167, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.follows {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 172, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post_user_icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+}
+
+/* line 181, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post_user_name {
+  flex: 1;
+  display: inline;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+/* line 188, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+}
+/* line 192, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.stats a {
+  float: left;
+  padding: 0 10px;
+  border-left: 1px solid gray-lighter;
+  color: gray;
+}
+/* line 197, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.stats a:first-child {
+  padding-left: 0;
+  border: 0;
+}
+/* line 201, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.stats a:hover {
+  text-decoration: none;
+  color: blue;
+}
+/* line 206, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.stats strong {
+  display: block;
+}
+
+/* line 211, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+}
+/* line 214, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.user_avatars .gravatar {
+  margin: 1px 1px;
+}
+/* line 217, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.user_avatars a {
+  padding: 0;
+}
+
+/* line 222, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.users.follow {
+  padding: 0;
+}
+
+/* line 226, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.movie_description {
+  width: 100%;
+  height: auto;
+  border-bottom: solid #db0a40;
+}
+
+/* line 232, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post_description {
+  width: 100%;
+  height: 300px;
+}
+
+/* line 240, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post_edit {
+  flex: 1;
+  display: inline;
+  vertical-align: middle;
+  float: right;
+  /*  position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;*/
+}
+
+/* line 252, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.post_user_information {
+  position: relative;
+}
+
+/* line 256, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.search_title {
+  color: #db0a40;
+}
+
+/* line 260, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.search_result {
+  color: #db0a40;
+}
+
+/* line 264, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.search_body {
+  text-align: center;
+}
+
+/* line 268, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.search_table {
+  margin: auto;
+}
+
+/* line 272, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.edit_body {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 277, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.comments {
+  padding: 5px;
+  margin-top: 15px;
+}
+/* line 280, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.comments a {
+  color: #fff;
+}
+/* line 282, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.comments a :hover {
+  text-decoration: underline;
+}
+
+/* line 292, /Users/take/projects/freestyle/app/assets/stylesheets/style.scss */
+.user_profile {
+  margin: auto;
+}
