@@ -1,5 +1,6 @@
 <div class="search_body">
 <h2 class="search_title">フリースタイラーを探す</h2>
+<%= link_to "フリースタイラー一覧", users_path %>
   <%= form_tag('/users/search', method: :get) do %>
     <%= text_field_tag :search, "", placeholder: "ユーザー名で検索" %>
     <%= submit_tag "検索" %>

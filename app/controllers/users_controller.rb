@@ -3,7 +3,14 @@ class UsersController < ApplicationController
    before_action only: [:index, :edit, :update, :destroy, :following, :followers]
 
    def index
-    @user = User.all
+    @users = User.all
+    gon.markerData = []
+    @users.each do |user|
+      lat = user.latitude
+      lng = user.longitude
+      name = user.nickname
+      gon.markerData << { name: name, lat: lat, lng: lng }
+    end
    end
 
   def show

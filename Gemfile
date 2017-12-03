@@ -56,10 +56,15 @@ end
 
   gem 'acts-as-taggable-on', '~>3.4'
   gem 'carrierwave'
+  gem 'rmagick'
   gem 'jquery-rails'
 
   group :production do
   gem 'rails_12factor'
 end
+
+gem "gmaps4rails"
+gem "geocoder"
+gem "gon"
 
 

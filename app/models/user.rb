@@ -14,6 +14,9 @@ class User < ActiveRecord::Base
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
 
+  geocoded_by :address
+  after_validation :geocode
+
  def feed
     following_ids = "SELECT followed_id FROM relationships
                      WHERE follower_id = :user_id"
